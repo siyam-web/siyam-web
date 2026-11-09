@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siyam Edit | Photo & Video Editing</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080b16;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #101629;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #27334d;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00e5ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #00e5ff;
+}
+
+.hero {
+    min-height: 570px;
+    padding: 110px 8%;
+    display: flex;
+    align-items: center;
+    background:
+    radial-gradient(circle at 80% 30%, #163a55, transparent 40%),
+    linear-gradient(135deg,#080b16,#111d35);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #00e5ff;
+}
+
+.hero p {
+    color: #c3ccda;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #00c9e8;
+    color: #06111d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 5px;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    background: white;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #00e5ff;
+    color: #00e5ff;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #00e5ff;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    color: #aab6c9;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #111a2e;
+    border: 1px solid #27334d;
+    padding: 30px 22px;
+    border-radius: 14px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #00e5ff;
+}
+
+.card .icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    color: #00e5ff;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #b9c3d2;
+    line-height: 1.7;
+}
+
+.about {
+    background: #101629;
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #c3ccda;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.portfolio-box {
+    background: #111a2e;
+    border: 1px dashed #00e5ff;
+    border-radius: 12px;
+    padding: 45px 20px;
+    text-align: center;
+    color: #c3ccda;
+}
+
+.contact {
+    background: #101629;
+    text-align: center;
+}
+
+.contact p {
+    color: #c3ccda;
+    margin: 15px 0;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #9ba8bb;
+    background: #080b16;
+    border-top: 1px solid #27334d;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 22px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 15px 19px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 2000;
+    box-shadow: 0 4px 20px #0008;
+}
+
+@media(max-width:700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 85px 7%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SIYAM EDIT.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME SECTION -->
+<div class="hero" id="home">
+    <div class="hero-content">
+
+        <h1>
+            Creative Photo &<br>
+            <span>Video Editing</span>
+        </h1>
+
+        <p>
+            Welcome to Siyam Edit!
+            Professional Photo Editing and Video Editing
+            Services. Let's make your memories more beautiful
+            with creative and professional editing.
+        </p>
+
+        <a class="btn"
+        href="#services">Explore Services</a>
+
+        <a class="btn btn-outline"
+        href="https://wa.me/8801789938852?text=Hello%20Siyam%20Edit%2C%20I%20want%20to%20know%20about%20your%20services."
+        target="_blank">Order Now</a>
+
+    </div>
+</div>
+
+<!-- SERVICES SECTION -->
+<section id="services">
+
+    <div class="section-title">
+        <h2>My Services</h2>
+        <p>Professional Editing Services For You</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">📸</div>
+            <h3>Photo Editing</h3>
+            <p>
+                Professional photo editing,
+                color correction and creative
+                photo enhancement.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎬</div>
+            <h3>Video Editing</h3>
+            <p>
+                High quality video editing,
+                cinematic effects and
+                professional transitions.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✨</div>
+            <h3>Photo Retouching</h3>
+            <p>
+                Creative retouching,
+                background editing and
+                professional photo design.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📱</div>
+            <h3>Reels & Shorts</h3>
+            <p>
+                Attractive Facebook Reels,
+                TikTok videos and YouTube
+                Shorts editing.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+
+    <div class="section-title">
+        <h2>About Siyam Edit</h2>
+        <p>Creativity Meets Professionalism</p>
+    </div>
+
+    <p>
+        I am a Photo & Video Editor.
+        My goal is to provide creative,
+        attractive and professional editing
+        services to my clients.
+        Customer satisfaction and quality
+        work are my priorities.
+        Contact me today to discuss your project.
+    </p>
+
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio">
+
+    <div class="section-title">
+        <h2>My Portfolio</h2>
+        <p>Some Creative Work Coming Soon</p>
+    </div>
+
+    <div class="portfolio-box">
+        <h3>🎨 My Creative Editing Gallery</h3>
+        <p>
+            My best photo and video editing
+            projects will be displayed here.
+        </p>
+    </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+
+    <div class="section-title">
+        <h2>Contact Me</h2>
+        <p>Let's Start Your Project Today!</p>
+    </div>
+
+    <p>📱 WhatsApp: 01789938852</p>
+
+    <p>💬 Send me a message directly on WhatsApp.</p>
+
+    <a class="btn"
+    href="https://wa.me/8801789938852?text=Hello%20Siyam%20Edit%2C%20I%20want%20to%20place%20an%20order."
+    target="_blank">
+    Message on WhatsApp
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 Siyam Edit. All Rights Reserved.</p>
+    <p>Professional Photo & Video Editing</p>
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp-float"
+href="https://wa.me/8801789938852?text=Hello%20Siyam%20Edit"
+target="_blank">
+    ☎ WhatsApp
+</a>
+
+</body>
+</html>
